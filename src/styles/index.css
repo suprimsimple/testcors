@@ -1,0 +1,141 @@
+@font-face {
+	font-family: "Landasans";
+	src: url("../static/fonts/Landasans-Medium.woff") format("woff"),
+		url("../static/fonts/Landasans-Medium.woff2") format("woff2");
+	font-weight: medium;
+}
+
+@font-face {
+	font-family: "Aktiv-Grotesk";
+	src: url("../static/fonts/AktivGrotesk-Regular.ttf") format("ttf");
+	font-weight: 400;
+}
+
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background-color: #ffe8e3;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.clear-user-agent-styles table,
+.clear-user-agent-styles thead,
+.clear-user-agent-styles tbody,
+.clear-user-agent-styles tfoot,
+.clear-user-agent-styles tr,
+.clear-user-agent-styles th,
+.clear-user-agent-styles td {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-collapse: inherit;
+	border-spacing: 0;
+	border-color: inherit;
+	vertical-align: inherit;
+	font-weight: inherit;
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0;
+}
+
+.grayBar1,
+.grayBar2 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 20%;
+	background-color: rgba(99, 49, 60, 0.05);
+	z-index: -1;
+	pointer-events: none;
+}
+
+.grayBar1 {
+	left: 20%;
+}
+
+.grayBar2 {
+	left: 60%;
+}
+
+.grayLines > div {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	border-top: 1px solid #63313c;
+	z-index: 10;
+	pointer-events: none;
+}
+
+#times > input[type="radio"]:checked ~ div {
+	background: rgba(215, 31, 133, 0.2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Landasans", sans-serif !important;
+}
+
+.hotPink {
+	color: #d71f85;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+table,
+.table {
+	color: #63313c !important;
+}
+
+input {
+	accent-color: #63313c;
+}
+
+.pulse {
+	animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+ul li::marker {
+	color: #63313c;
+	font-size: 1.75em;
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
+
+.space-y-4 > * + * {
+	margin-top: 1rem;
+}
+
+
